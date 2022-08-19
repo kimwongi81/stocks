@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* [ EBS English ] 2018.10.29 v0.2 by Hwang Heejin */
+
+
+
+
+
+
+/************************************************************ MAIN ************************************************************/
+
+body.main header.fix .nav { display: none; }
+body.main header.fix > .inner h1 { margin: 15px 0; }
+
+body.main .visual { position: relative; display: block; overflow: hidden; width: 100%; height: 400px; }
+body.main .visual .item { display: inline-block; overflow: hidden; width: 100%; }
+body.main .visual .item img { display: block; overflow: hidden; height: 400px; margin: 0 auto; opacity: 0; }
+
+body.main .visual .pager { position: absolute; bottom: 10px; left: 50%; margin-left: -40px; overflow: hidden; width: 70px; height: 40px; }
+body.main .visual .pager p { display: inline-block; float: left; width: 30px; height: 40px; line-height: 40px; text-align: center; color: #000; font-size: 14px; font-weight: 500; }
+body.main .visual .pager .bt { float: right; }
+
+body.main .visual > .bt.ico { position: absolute; top: 50%; margin-top: -20px; }
+body.main .visual > .bt.ico.next { right: 50%; margin-right: -480px; }
+body.main .visual > .bt.ico.prev { left: 50%; margin-left: -480px; }
+
+/* MAIN */
+body.main section { position: relative; width: 100%; text-align: center; }
+body.main section h2 { margin-bottom: 30px; }
+
+body.main section .news { display: block; overflow: hidden; height: 50px; background-color: #2f405f; }
+body.main section .news .inner { overflow: hidden; }
+body.main section .news span { display: inline-block; overflow: hidden; text-align: center; }
+body.main section .news span a { display: inline-block; overflow: hidden; float: left; height: 50px; line-height: 52px; text-align: center; color: #fff; font-size: 18px; }
+body.main section .news span i { font-size: 16px; font-weight: 300; padding-right: 10px; }
+body.main section .news span b { color: #ffbd99; font-weight: 400; }
+body.main section .news span .bt { margin: 5px 0 0 10px;; }
+body.main section .news span .bt.x:before { background-color: #fff; }
+body.main section .news span .bt.x:after { background-color: #fff; }
+
+body.main section .onair ul { position: relative; display: block; overflow: hidden; padding-left: 150px; }
+body.main section .onair ul:before { content: "ON AIR"; position: absolute; left: 0; top: 50%; margin-top: -25px; display: block; overflow: hidden; width: 120px; height: 50px; line-height: 50px; text-align: left; color: #ff3c00; font-size: 30px; font-weight: 900; letter-spacing: -2px; }
+body.main section .onair ul li { display: inline-block; overflow: hidden; width: 50%; height: 100px; float: left; text-align: left; padding: 25px 0; }
+body.main section .onair ul li p { display: block; overflow: hidden; height: 20px; line-height: 20px; color: #040404; font-size: 16px; white-space: nowrap; text-overflow: ellipsis; margin-bottom: 5px; }
+body.main section .onair ul li i { display: inline-block; overflow: hidden; height: 20px; line-height: 20px; color: #585858; font-size: 14px; }
+body.main section .onair ul li i:last-child { line-height: 18px; font-size: 12px; text-align: center; border: 1px solid #ababab; border-radius: 15px; background-color: #fff; padding: 0 10px; margin-left: 10px; }
+body.main section .onair ul li img { float: left; height: 50px; border-radius: 3px; vertical-align: middle; margin-right: 20px; }
+body.main section .onair ul li:first-child i:last-child { color: #fff; border-color: #ff3c00; background-color: #ff3c00; }
+
+body.main section .level { display: block; overflow: hidden; background-color: #263758; }
+body.main section .level .inner { position: relative; overflow: hidden; padding: 50px 0; }
+body.main section .level h2 { text-align: left; color: #fff; font-size: 35px; padding-top: 20px; }
+body.main section .level h2 b { display: block; color: #ff8100; font-size: 50px; }
+body.main section .level .text { text-align: left; color: #788f98; font-size: 17px; line-height: 20px; padding-bottom: 30px; }
+
+body.main section .level .levelstep { position: absolute; right: 0; top: 50%; margin-top: -120px; display: inline-block; width: 680px; }
+
+body.main section .level .start { position: relative; display: block; width: 250px; height: 44px; line-height: 44px; text-align: center; color: #fff; font-size: 22px; border-radius: 22px; background-color: #ff8100; margin-bottom: 30px; }
+body.main section .level .start:before { content: ""; position: absolute; right: -8px; top: 10px; display: block; overflow: hidden; width: 49px; height: 75px; background: url(../images/hand.png) no-repeat 0 0; }
+
+body.main section .result { display: block; overflow: hidden; text-align: left; background-color: #263758; }
+body.main section .result .inner { position: relative; overflow: hidden; padding: 50px 0; }
+body.main section .result .inner .bt.x { position: absolute; top: 50px; right: 0; }
+body.main section .result .inner .bt.x:before { background-color: #fff; }
+body.main section .result .inner .bt.x:after { background-color: #fff; }
+body.main section .result h3 { color: #fff; text-align: left; }
+body.main section .result h3 + .text { color: #87d0ff; padding: 10px 0 20px 0; }
+body.main section .result .graph { float: left; margin-right: 30px; }
+body.main section .result .graph .donut .c100:after { background-color: #263758; }
+body.main section .result .graph .lev { margin-left: 0; }
+body.main section .result .graph + .text { color: #fff; font-size: 14px; }
+body.main section .result .graph + .text .bt { margin: 20px 0 10px 0; }
+body.main section .result .graph + .text .bt:hover { background-color: #ff8100; }
+
+body.main section .result + .level { display: none; }
+
+body.main section .recom .inner { padding: 50px 0; }
+body.main section .recom h3 { margin-top: 70px; }
+
+body.main section .recom .list.two li { margin: 0; padding: 20px 0; border-top: 1px solid #e6e6e6; }
+body.main section .recom .list.two li:nth-child(1),
+body.main section .recom .list.two li:nth-child(2) { border-top: 0; }
+body.main section .recom .list.two li:nth-child(4n-2) { margin: 0; }
+body.main section .recom .list.two li:nth-child(4n-1) { margin: 0; }
+body.main section .recom .list.two li:nth-child(3n-1) { margin: 0; }
+body.main section .recom .list.two li .card.lie { height: 120px; padding: 0; }
+body.main section .recom .list.two li .card.lie img { max-width: 40%; margin-right: 20px; }
+body.main section .recom .list.two li .card.lie .tit { max-height: 40px; line-height: 20px; font-size: 16px; margin-bottom: 5px; }
+body.main section .recom .list.two li .card.lie .con { max-height: 30px; line-height: 15px; }
+body.main section .recom .list.two li .card.lie .cate { height: 30px; line-height: 30px; }
+
+body.main section .event { background-color: #f7f7f7; }
+body.main section .event h3 { margin-bottom: 30px; }
+body.main section .event .inner { position: relative; overflow: hidden; padding: 50px 0; }
+body.main section .event .inner .sliderMevent { padding: 0 45px; }
+body.main section .event .inner .item { display: block; overflow: hidden; padding: 0 5px; }
+body.main section .event .inner .item img { width: 100%; }
+body.main section .event .inner .bt.ico { position: absolute; top: 50%; }
+body.main section .event .inner .bt.ico.next { right: 0; }
+body.main section .event .inner .bt.ico.prev { left: 0; }
+
+body.main section .quick .inner { overflow: hidden; padding: 50px 0; }
+body.main section .quick ul { display: block; overflow: hidden; width: 100%; }
+body.main section .quick ul li { display: inline-block; overflow: hidden; float: left; width: 25%; -webkit-transition: all 0.3s; transition: all 0.3s; }
+body.main section .quick ul li:nth-child(1) a { background: #ffb449 url(../images/quick01.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(2) a { background: #ff9d38 url(../images/quick02.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(3) a { background: #ff901f url(../images/quick03.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(4) a { background: #ff7e1f url(../images/quick04.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(5) a { background: #7589c0 url(../images/quick05.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(6) a { background: #596da7 url(../images/quick06.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(7) a { background: #3e569b url(../images/quick07.png) no-repeat center 20px; }
+body.main section .quick ul li:nth-child(8) a { background: #394c80 url(../images/quick08.png) no-repeat center 20px; }
+
+body.main section .quick ul li a { position: relative; display: block; overflow: hidden; height: 210px; padding-top: 150px; -webkit-transition: all 0.3s; transition: all 0.3s; }
+body.main section .quick ul li a:before { content: "바로가기"; position: absolute; left: 0; right: 0; bottom: -50px; display: block; overflow: hidden; width: 100%; height: 50px; line-height: 50px; text-align: left; color: #000; font-size: 14px; font-weight: 700; background: rgba(255,255,255,0.5) url(../images/ico_search.png) no-repeat 30px 50%; background-size: 20px; padding-left: 50px; -webkit-transition: all 0.3s; transition: all 0.3s; }
+body.main section .quick ul li a .tit { display: block; color: #fff; font-size: 20px; line-height: 24px; padding: 0 30px; }
+body.main section .quick ul li a .tit:before { content: "방송프로그램"; display: none; }
+body.main section .quick ul li a .con { display: block; text-align: left; color: #fff; font-size: 14px; line-height: 18px; padding: 10px 30px; opacity: 0; }
+body.main section .quick ul li a:hover { padding-top: 30px; background-size: 70px; background-position: 90% 15px; }
+body.main section .quick ul li a:hover:before { bottom: 0; }
+body.main section .quick ul li a:hover .tit { text-align: left; }
+body.main section .quick ul li a:hover .tit:before { display: block; }
+body.main section .quick ul li a:hover .con { opacity: 1; }
+
+body.main section .customer .inner { overflow: hidden; padding: 50px 0; }
+body.main section .customer .tap { display: none; }
+body.main section .customer .tapview { display: inline-block; overflow: hidden; width: 50%; float: left; }
+body.main section .customer .tapview .tapc { display: block; overflow: hidden; text-align: left; padding-bottom: 40px; }
+body.main section .customer .tapview .tapc .tit { position: relative; display: block; overflow: hidden; padding-bottom: 20px; }
+body.main section .customer .tapview .tapc .tit .bt { position: absolute; right: 0; top:0; }
+body.main section .customer .tapview .tapc .con { display: block; overflow: hidden; height: 20px; line-height: 20px; color: #2d2a2a; font-size: 16px; white-space: nowrap; text-overflow: ellipsis; margin-top: 10px; }
+body.main section .customer .tapview .tapc .con:hover { text-decoration: underline; }
+body.main section .customer .cs { display: inline-block; overflow: hidden; width: 40%; float: right; }
+body.main section .customer .cs .con { display: block; overflow: hidden; text-align: center; }
+body.main section .customer .cs .con a { display: inline-block; overflow: hidden; width: 150px; height: 150px; color: #000; font-size: 16px; border-radius: 50%; padding-top: 100px; margin: 10px; margin-bottom: 0; }
+body.main section .customer .cs .con a:nth-child(1) { background: #f3f3f3 url(../images/cs01.png) no-repeat center 15px; background-size: 80px; }
+body.main section .customer .cs .con a:nth-child(2) { background: #f3f3f3 url(../images/cs02.png) no-repeat center 15px; background-size: 80px; }
+body.main section .customer .cs .con a:nth-child(3) { background: #f3f3f3 url(../images/cs03.png) no-repeat center 15px; background-size: 80px; }
+body.main section .customer .cs .con a:nth-child(4) { background: #f3f3f3 url(../images/cs04.png) no-repeat center 15px; background-size: 80px; }
+
+
+
+
+
+@media all and (max-width: 980px) {
+	
+	body.main .visual .item img { height: auto; opacity: 1; }
+	body.main .visual .pager { left: 10px; margin-left: 0; }
+	body.main .visual .bt.ico.next { right: 0; margin-right: 0; }
+	body.main .visual .bt.ico.prev { left: 0; margin-left: 0; }
+	
+	body.main section .onair ul { padding-left: 120px; }
+	body.main section .onair ul:before { text-align: center; }
+	
+	body.main section .level .inner { padding: 50px 0; }
+	body.main section .level h2 { text-align: center; color: #fff; font-size: 30px; padding-top: 0; }
+	body.main section .level h2 b { display: inline-block; padding-right: 10px; vertical-align: text-top; }
+	body.main section .level .text { text-align: center; }
+	body.main section .level .levelstep { position: static; margin: 0 auto; display: block; }
+	body.main section .level .start { margin: 30px auto 0 auto; }
+	
+	body.main section .result .inner { padding: 50px 20px; }
+	body.main section .result .inner .bt.x { right: 20px; }
+	body.main section .result h3 + .text { text-align: left; }
+	body.main section .result .graph + .text { text-align: left; }
+	
+	body.main section .recom .inner { padding: 40px 20px; }	
+	body.main section .recom .list.two li { float: none; width: 100%; }
+	body.main section .recom .list.two li:nth-child(2) { border-top: 1px solid #e6e6e6; }
+	body.main section .recom .list.two li:nth-child(even) { float: none; }
+	body.main section .recom .list.two li .card.lie { height: auto; }
+	body.main section .recom .list.two li .card.lie img { max-width: 30%; margin-right: 20px; }
+	body.main section .recom .list.two li .card.lie .tit { max-height: 100%; line-height: 120%; margin-bottom: 10px; }
+	body.main section .recom .list.two li .card.lie .con { max-height: 100%; line-height: 120%; }
+	
+	body.main section .event .inner { padding: 30px 0; }
+	body.main section .event .inner .sliderMevent { padding: 0 5px; }
+	
+	body.main section .quick .inner { padding: 40px 0; }
+	body.main section .quick ul li:nth-child(1) a,
+	body.main section .quick ul li:nth-child(2) a,
+	body.main section .quick ul li:nth-child(3) a,
+	body.main section .quick ul li:nth-child(4) a,
+	body.main section .quick ul li:nth-child(5) a,
+	body.main section .quick ul li:nth-child(6) a,
+	body.main section .quick ul li:nth-child(7) a,
+	body.main section .quick ul li:nth-child(8) a { background-position: 50% 10px; background-size: 50px; }
+	body.main section .quick ul li a { height: 100px; padding-top: 65px; }
+	body.main section .quick ul li a:before { display: none; }
+	body.main section .quick ul li a .tit { display: block; font-size: 14px; line-height: 16px; padding: 0; }
+	body.main section .quick ul li a .con { display: none; }
+	body.main section .quick ul li a:hover { padding-top: 65px; }
+	body.main section .quick ul li a:hover .tit { text-align: center; }
+	body.main section .quick ul li a:hover .tit:before { display: none; }
+	
+	body.main section .customer .inner { padding: 20px; }
+	body.main section .customer .tapview { display: block; width: 100%; float: none; }
+	body.main section .customer .tapview .tapc { width: 48%; float: left; }
+	body.main section .customer .tapview .tapc:last-child { float: right; }
+	body.main section .customer .cs { display: block; width: 100%; float: none; }
+	body.main section .customer .cs h3 { padding-bottom: 10px; }
+}
+@media all and (max-width: 740px) {
+	
+	body.main { min-width: 375px; }
+	
+	body.main section .news span a{ font-size: 14px; letter-spacing: -1px; }
+	body.main section .news span i { font-size: 12px; }
+	
+	body.main section .onair ul { overflow-y: hidden; overflow-x: auto; width: 100%; text-align: left; white-space: nowrap; -ms-overflow-style: none; padding-left: 100px; }
+	body.main section .onair ul:before { width: 100px; font-size: 20px; }
+	body.main section .onair ul::-webkit-scrollbar { width: 0; display: none !important; }
+	body.main section .onair ul li { float: none; width: 300px; height: 80px; padding: 15px 0; }
+	
+	body.main section .level .inner { padding: 50px 10px; }
+	body.main section .level h2 { text-align: center; font-size: 30px; padding-top: 0; margin-bottom: 10px; }
+	body.main section .level h2 b { font-size: 40px; line-height: 40px; }
+	body.main section .level h2 + p { text-align: center; color: #788f98; font-size: 14px; line-height: 16px; padding-bottom: 10px; }
+	body.main section .level .levelstep { width: 100%; }
+	body.main section .level .start:before { display: none; }
+	
+	body.main section .result .graph { float: none; margin: 0; text-align: center; }
+	
+	body.main section .recom .list.two li .card.lie img { max-width: 35%; margin-right: 10px; }
+	body.main section .recom .list.two li .card.lie .con { display: none; }
+	
+	body.main section .customer .inner { padding: 0; }
+	body.main section .customer .tap { display: flex; }
+	body.main section .customer .tap .tapt { border: 0; }
+	body.main section .customer .tapview .tapc { display: none; width: 100%; float: none; padding: 20px; }
+	body.main section .customer .tapview .tapc:last-child { float: none; }
+	body.main section .customer .tapview .tapc.on { display: block; }
+	body.main section .customer .tapview .tapc .tit { display: none; }
+	body.main section .customer .cs { display: block; width: 100%; float: none; margin-top: 10px; }
+	body.main section .customer .cs h3 { display: none; }
+	body.main section .customer .cs .con a { float: left; width: 50%; height: 50px; line-height: 50px; text-align: left; font-size: 14px; border-left: 1px solid #ededed; border-top: 1px solid #ededed; border-radius: 0; margin: 0; padding: 0; padding-left: 60px; }
+	body.main section .customer .cs .con a:nth-child(odd) { border-left: 0; }
+	body.main section .customer .cs .con a:nth-child(1),
+	body.main section .customer .cs .con a:nth-child(2),
+	body.main section .customer .cs .con a:nth-child(3),
+	body.main section .customer .cs .con a:nth-child(4) { background-color: #fff; background-position: 15px 50%; background-size: 30px; }
+}
+
+
+
+
+
+
+
+
+
+
